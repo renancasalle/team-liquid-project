@@ -4,26 +4,19 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Mako';
+}
+body{
+    font-family: 'Mako', sans-serif;
 }
 header{
     height: 932px;
     width: 100%;
 }
-header.header .background{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSbVM9Zt7LPAlm8Dpp42e8oWdtaPNR3Gctq6Bo-W6jCg&sg");
-    height: 1240px;
-    width: 800px;
-    background-repeat: no-repeat;
-    background-size: 2000px;
-}
 nav.nav{
-    -webkit-animation-timing-function: blur(8px);
-    backdrop-filter: blur(8px);
+    /*-webkit-animation-timing-function: blur(8px);
+    backdrop-filter: blur(8px);*/
     height: 80px;
     width: 100%;
-    box-shadow: 5px;
-    position: fixed;
     justify-self: end;
     display: flex;
 }
@@ -40,6 +33,7 @@ ul{
     display: flex;
     justify-content: flex-end;
     color: white;
+    cursor: pointer;
 }
 li{
     padding-right: 60px;
@@ -52,7 +46,6 @@ header.header{
     background: rgb(32,32,32);
     background: linear-gradient(112deg, rgba(32,32,32,1) 0%, rgba(5,24,39,1) 100%);
 }
-
 .nav {
     display: flex;
     justify-content: space-between; 
@@ -60,7 +53,7 @@ header.header{
     font-size: 20px;
 }
 li {
-    margin-right: 20px; /* Adicione espaço entre os itens da lista (opcional) */
+    margin-right: 20px; 
 }
 .logo img {
     height: 80px;
@@ -70,15 +63,35 @@ li {
     display: flex;
     margin-left: 50px;
     align-items: center;
-    justify-content: start;
     height: 750px;
+    justify-content:space-around;
 
 }
 .column span.text1{
     text-align: start;
     color: white;
+    font-size: 18px;
 }
 .column h3{
     color: #daa520;
     margin-bottom: 20px;
+    font-size: 26px;
+}
+.column button.btn{
+    border: none;
+    margin-top: 20px;
+    background-color: #daa520;
+    width: 186px;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight:lighter;
+}
+.column .image1{
+    display: flex;
+    justify-content: end;
+    margin-right: 200px;
+    width: 500px;
+    height: 500px;
 }
