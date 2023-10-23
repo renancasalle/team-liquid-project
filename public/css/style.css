@@ -38,6 +38,10 @@ ul{
 li{
     padding-right: 60px;
 }
+li:hover{
+    color: #daa520;
+    transition: ease-in-out;
+}
 nav.nav .logo img{
    height: 80px;
    width: 236px;
@@ -87,6 +91,12 @@ li {
     color: white;
     cursor: pointer;
     font-weight:lighter;
+}
+.column button.btn:hover{
+    width: 196px;
+    height: 55px;
+    transition: 0.6s ease-in;
+    box-shadow:inset 3px 3px 3px #505050;
 }
 .column .image1{
     display: flex;
