@@ -133,5 +133,29 @@ section.rainbowsix{
     background: rgb(32,32,32);
     background-image: linear-gradient(to right top, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
     display: flex;
-    
+}
+section.liquidR6{
+    width: 100%;
+    height: 1800px;
+    background-color: #d2d2d2;
+}
+.liquidR6 span{
+    color: black;
+}
+.imagePlayers img{
+    width: 680px;
+    height: 450px;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 900px;
+    margin-left: 30px;
+}
+.about span{
+    width: 600px;
+    height: 400px;
+    color: #051827;
+    font-size: 18px;
 }
