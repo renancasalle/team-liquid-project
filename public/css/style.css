@@ -114,8 +114,8 @@ li {
     padding-bottom: 70px;
 }
 section img{
-    height: 750px;
-    width: 750px;
+    height: 450px;
+    width: 680px;
     border-radius: 10px;
 }
 section h3{
@@ -135,31 +135,56 @@ section.rainbowsix{
     display: flex;
 }
 section.liquidR6{
-    width: 100%;
-    height: 1800px;
-    background-color: #d2d2d2;
-}
-.liquidR6 span{
-    color: black;
-}
+    height: 1400px;
+    background-image: #f2f2f2;
     /* .imagePlayers img{
         width: 680px;
         height: 450px;
     } */
+}
 .about{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 900px;
+    height: 50%;
     margin-left: 30px;
 }
 .about span{
-    width: 600px;
-    height: 400px;
     color: #051827;
     font-size: 18px;
 }
 .liquidR6 img{
-    height: 400px;
-    width: 500px;
+    height: 450px;
+    width: 680px;
+}
+.columnPL{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    margin-left: 30px;
+    margin-top: 130px;
+}
+.txtPL span{
+    color: #051827;
+    font-size: 18px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+}
+.title h1{
+color: #daa520;
+font-size: 40px;
+}
+.gradient{
+    background-image: linear-gradient(to bottom, #f2f2f2, #b4b4ba, #777b85, #3e4654, #051827);
+}
+.imagePlayers span{
+   color: #051827;
+   font-weight: 600;
+}
+.imgPL span{
+    color: #051827;
+    font-weight: 600;
 }
