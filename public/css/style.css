@@ -161,7 +161,7 @@ section.liquidR6{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 100%;
+    height: 50%;
     margin-left: 30px;
     margin-top: 130px;
 }
@@ -187,4 +187,21 @@ font-size: 40px;
 .imgPL span{
     color: #051827;
     font-weight: 600;
+}
+.liquidR6 span{
+    color: #051827;
+    font-size: 22px;
+}
+.BR6{
+    height: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.trophies img{
+    height: 450px;
+    width: 680px;
+}
+.trophies{
+    height: 100%;
 }
