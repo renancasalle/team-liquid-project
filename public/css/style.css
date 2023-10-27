@@ -154,8 +154,8 @@ section.liquidR6{
     font-size: 18px;
 }
 .liquidR6 img{
-    height: 450px;
-    width: 680px;
+    height: 400px;
+    width: 630px;
 }
 .columnPL{
     display: flex;
@@ -180,11 +180,8 @@ font-size: 40px;
 .gradient{
     background-image: linear-gradient(to bottom, #f2f2f2, #b4b4ba, #777b85, #3e4654, #051827);
 }
-.imagePlayers span{
-   color: #051827;
-   font-weight: 600;
-}
-.imgPL span{
+/*Span de baixo das imagens*/
+.span-bottom-image {
     color: #051827;
     font-weight: 600;
 }
@@ -199,9 +196,15 @@ font-size: 40px;
     justify-content: space-around;
 }
 .trophies img{
-    height: 450px;
-    width: 680px;
+    height: 400px;
+    width: 630px;
 }
 .trophies{
     height: 100%;
+}
+.BR6-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 45%;
 }
