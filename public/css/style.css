@@ -251,4 +251,37 @@ footer .perdoa{
 footer{
     height: 250px;
     background-image: linear-gradient(to right top, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
+    color: white;
+    display: flex;
+}
+.logo-footer{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+}
+.logo-footer img{
+    height: 100px;
+    width: 300px;
+}
+.menu{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.social-medias{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+}
+.social-medias img{
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+}
+.menu li{
+    display: flex;
+    flex-direction: column;
 }
