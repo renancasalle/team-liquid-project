@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+}
 body{
     font-family: 'Mako', sans-serif;
 }
@@ -135,7 +138,7 @@ section.rainbowsix{
     display: flex;
 }
 section.liquidR6{
-    height: 1400px;
+    height: 100%;
     background-image: #f2f2f2;
     /* .imagePlayers img{
         width: 680px;
@@ -146,7 +149,7 @@ section.liquidR6{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 50%;
+    height: 600px;
     margin-left: 30px;
 }
 .about span{
@@ -177,9 +180,7 @@ section.liquidR6{
 color: #daa520;
 font-size: 40px;
 }
-.gradient{
-    background-image: linear-gradient(to bottom, #f2f2f2, #b4b4ba, #777b85, #3e4654, #051827);
-}
+
 /*Span de baixo das imagens*/
 .span-bottom-image {
     color: #051827;
@@ -190,10 +191,11 @@ font-size: 40px;
     font-size: 22px;
 }
 .BR6{
-    height: 45%;
+    height: 60%;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    align-self: center;
 }
 .trophies img{
     height: 400px;
@@ -202,9 +204,51 @@ font-size: 40px;
 .trophies{
     height: 100%;
 }
-.BR6-2{
+.BR6-pt2{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    height: 45%;
+    height: 700px;
+}
+footer .perdoa{
+    height: 100%;
+    background-color: red;
+    z-index: 10;
+}
+.txt-trophie{
+   align-self: center;
+}
+.sobre-eu{
+    height: 800px;
+    background-image: linear-gradient(to right bottom, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem-eu{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre-mim{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagem-eu img{
+    height: 500px;
+    width: 500px;
+}
+.sobre-mim span{
+    height: 300px;
+    width: 700px;
+    text-align: justify;
+}
+footer{
+    height: 250px;
+    background-image: linear-gradient(to right top, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
 }
