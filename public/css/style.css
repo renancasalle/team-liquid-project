@@ -5,6 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+body::-webkit-scrollbar {
+    width: 8px;             
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: #1a1a1a;        
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color:  #daa520;    
+    border-radius: 20px;       
+    border: 3px solid #daa520;  
+  }
 html{
     height: 100%;
 }
@@ -19,6 +32,7 @@ nav.nav{
     width: 100%;
     justify-self: end;
     display: flex;
+    list-style: none;
 }
 nav ul li{
     text-decoration: none;
@@ -26,9 +40,10 @@ nav ul li{
     font-weight: bold;
     letter-spacing: 1px;
     cursor: pointer;
+    list-style: none;
+    
 }
 ul{
-    list-style: none;
     padding: 0; 
     display: flex;
     justify-content: flex-end;
@@ -37,6 +52,7 @@ ul{
 }
 li{
     padding-right: 60px;
+    list-style: none;
 }
 li:hover{
     color: #daa520;
@@ -49,7 +65,7 @@ nav.nav .logo img{
 header.header{
     background: rgb(32,32,32);
     background-image: linear-gradient(to right bottom, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
-    
+ 
 }
 .nav {
     display: flex;

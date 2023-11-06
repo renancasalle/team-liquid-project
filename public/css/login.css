@@ -8,6 +8,7 @@ body{
     color: #1a1a1a;
     height: 900px;
     background-image: linear-gradient(to right, #eeeeee, #e9e9e9, #e5e5e5, #e0e0e0, #dcdcdc);
+    font-family: 'Mako', sans-serif;
 }
 .container{
     display: flex;
@@ -18,10 +19,10 @@ body{
 }
 .container-login{
  height: 100%;   
- height: 50%;
+ width: 50%;
  display: flex;
  flex-direction: column;
-text-align: start;
+ text-align: start;
 }
 .container-login input{
     margin-bottom: 10px;
@@ -36,19 +37,20 @@ text-align: start;
 .container-login button{
     margin: 25px;
     border: none;
-    height: 35px;
+    height: 40px;
     width: 250px;
     border-radius: 20px;
     background-color: #1a1a1a;
     color: #d2d2d2;
+    cursor: pointer;
 }
 .image-background img{
-    height: 500px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
 }
 .container-login{
     height: 100%;
-    width: 50%;
+    width: 100%;
     align-items: center;
     justify-content: center;
     text-align: end;
@@ -59,4 +61,32 @@ text-align: start;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
+    margin-bottom: 200px;
+    color: #051827;
+    font-size: 18px;
+    font-weight: 500;
+}
+.border{
+    border: solid 3px red;
+    border: none;
+    height: 500px;
+    width: 500px;
+    border-radius: 30px;
+    background-color: rgba(26, 26, 26, 0.7);
+}
+.social-medias img{
+    height: 35px;
+    width: 35px;
+    margin: 10px;
+}
+.image-background span{
+    width: 700px;
+}
+.meudeus{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
