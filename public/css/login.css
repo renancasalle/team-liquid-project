@@ -5,14 +5,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+    overflow: hidden;
+}
 body{
     color: #daa520;
     font-family: 'Montserrat', sans-serif;
-    height: 845px
+    height: 100%
 }
 .container{
     height: 100%;
-    display: hidden;
     display: flex;
 }
 .container-login{
