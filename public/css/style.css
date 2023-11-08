@@ -58,6 +58,10 @@ li:hover{
     color: #daa520;
     transition: ease-in-out;
 }
+a:hover{
+    color: #daa520;
+    transition: ease-in-out;
+}
 nav.nav .logo img{
    height: 80px;
    width: 236px;
@@ -74,6 +78,11 @@ header.header{
     font-size: 20px;
     
 }
+a{
+ text-decoration: none;
+ color: white;
+}
+
 li {
     margin-right: 20px; 
 }

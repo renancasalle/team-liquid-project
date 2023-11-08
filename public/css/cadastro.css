@@ -1,5 +1,5 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Mako&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mako&family=Roboto:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,14 +8,15 @@
 body{
     color: #daa520;
     font-family: 'Montserrat', sans-serif;
-    height: 845px
+    height: 927px
 }
 .container{
     height: 100%;
     display: hidden;
     display: flex;
+    flex-direction: row-reverse;
 }
-.container-login{
+.container-cadastro{
     height: 100%;
     width: 40%;
     background-color: #0b2447;
@@ -24,7 +25,7 @@ body{
     align-items: center;
     justify-content: center;
 }
-.container-login img{
+.container-cadastro img{
     width: 500px;
     height: 180px;
 }
@@ -35,7 +36,7 @@ body{
     align-items: center;
     flex-direction: column;
 }
-.container-login input{
+.container-cadastro input{
     height: 45px;
     width: 300px;
     margin: 15px;
@@ -43,7 +44,7 @@ body{
     border: none;
     padding: 15px;
 }
-.container-login button{
+.container-cadastro button{
     height: 45px;
     width: 300px;
     margin: 40px;
