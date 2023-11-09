@@ -5,16 +5,19 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    height: 100%;
+    overflow: hidden;
+}
 body{
     color: #daa520;
     font-family: 'Montserrat', sans-serif;
-    height: 927px
+    height: 100%
 }
 .container{
     height: 100%;
     display: hidden;
     display: flex;
-    flex-direction: row-reverse;
 }
 .container-cadastro{
     height: 100%;
@@ -24,6 +27,10 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.input a{
+    text-decoration: none;
+    color: #daa520;
 }
 .container-cadastro img{
     width: 500px;
@@ -60,7 +67,7 @@ span .senha{
     height: 100%;
     width: 60%;
 }
-.image-fallen img{
+.image-valorant img{
     height: 100%;
     width: 100%;
 }
