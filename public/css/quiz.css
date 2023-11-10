@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Mako&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, .container{
+    height: 100%;
+}
+.container{
+    background-image: url(../assents/png/679acfc168d0846ab8834d5ef7735038.gif);
+    background-repeat: no-repeat;
+    background-size: 2000px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card-2, .card-1{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.button{
+    border: solid 3px white;
+    width: 430px;
+    height: 500px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button img{
+    width: 420px;
+    height: 490px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.button img:hover{
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: 0.4s;
+}
