@@ -232,7 +232,7 @@ font-size: 40px;
 .BR6-pt2{
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     height: 700px;
 }
 footer .perdoa{
@@ -240,9 +240,7 @@ footer .perdoa{
     background-color: red;
     z-index: 10;
 }
-.txt-trophie{
-   align-self: center;
-}
+
 .sobre-eu{
     height: 800px;
     background-image: linear-gradient(to right bottom, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
@@ -294,7 +292,6 @@ footer{
 .menu{
     height: 100%;
     width: 33%;
-    
 
 }
 .social-medias{
@@ -334,5 +331,20 @@ footer{
 }
 .menu li{
     display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+.txt-trophie{
+    height: 320px;
+    width: 700px;
+    text-align: justify;
+}
+.border-image-me{
+    border: solid 2px #daa520;
+    border-radius: 20px;
+    height: 520px;
+    width: 520px;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
