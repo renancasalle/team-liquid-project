@@ -73,3 +73,7 @@ button:hover{
     color: white;
     transition: 0.4s;
 }
+a{
+    text-decoration: none;
+    color: #daa520;
+}

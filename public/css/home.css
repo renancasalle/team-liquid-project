@@ -6,10 +6,13 @@
 }
 html, body, .container{
     height: 100%;
-    font-family: 'Montserrat', sans-serif;;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
 }
 .container{
-    background-color: #0b2447;
+    /*background-color: #0b2447;*/
+    background-image: url(../assents/png/TL_Neon_Logo_Desktop.jpg);
+    background-size: 2000px;
     display: flex;
 }
 .container-1{
@@ -43,7 +46,7 @@ html, body, .container{
     width: 500px;
 }
 .container-center h1{
-    color: #daa520;
+    color: #261832;
 }
 .container-bottom{
     padding-right: 350px;
@@ -67,16 +70,33 @@ html, body, .container{
         outline: none;
         border-radius: 10px;
         border: none;
-        background: #ef233c;
-        box-shadow: 0 5px #d90429;
+        background: #45678E;
+        box-shadow: 0 5px #3F6089;
    
 }
 
 .container-bottom button:hover {
-    box-shadow: 0 3px #d90429;
+    box-shadow: 0 3px #3F6089;
     top: 1px;
   }
   .container-bottom button:active {
-    box-shadow: 0 0 #d90429;
+    box-shadow: 0 0 #3F6089;
     top: 5px;
   }
+  .container-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(17deg);
+    text-align: start;
+    
+}
+  .reminder{
+    border: solid 3px #d2d2d2;
+    width: 430px;
+    height: 300px;
+    border-radius: 27px;
+    margin: 12px;
+  }
+ 

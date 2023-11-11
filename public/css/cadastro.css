@@ -44,8 +44,8 @@ body{
     flex-direction: column;
 }
 .container-cadastro input{
-    height: 50px;
-    width: 300px;
+    height: 65px;
+    width: 350px;
     margin: 15px;
     border-radius: 8px;
     border: none;
@@ -53,13 +53,21 @@ body{
     font-size: 16px;
 }
 .container-cadastro button{
-    height: 45px;
-    width: 300px;
+    /*height: 45px;
+    width: 300px; */
+    height: 65px;
+    width: 350px;
     margin: 40px;
     border-radius: 8px;
     border: none;
     background-color: #daa520;
     cursor: pointer;
+}
+button:hover{
+    background-color: #0b2447;
+    border: solid 3px #daa520;
+    color: white;
+    transition: 0.4s;
 }
 span .senha{
     cursor: pointer;
@@ -71,4 +79,5 @@ span .senha{
 .image-valorant img{
     height: 100%;
     width: 100%;
+    
 }
