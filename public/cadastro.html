@@ -6,6 +6,7 @@
     <title>TeamLiquid - Cadastro</title>
     <link rel="stylesheet" href="css/cadastro.css">
     <link rel="shortcut icon" href="assents/png/" type="image/x-icon">
+    <script src="js/cadastro.js"></script>
 </head>
 <body>
     <div class="container">
@@ -18,12 +19,12 @@
         </div>
         <div class="input">
             <!-- <span>E-mail</span> -->
-            <input type="text" placeholder="E-mail">
+            <input type="text" placeholder="E-mail" id="input_email">
            <!-- <span>Senha</span> -->
-            <input type="password" placeholder="Senha">
+            <input type="password" placeholder="Senha" id="input_password">
           <!--  <span>Confirme sua senha</span> -->
-            <input type="password" placeholder="Confirme sua senha">
-            <button>Login</button>
+            <input type="password" placeholder="Confirme sua senha" id="input_confirmPassword">
+            <button onclick="realizarCadastro()">Cadastrar-se</button>
             <span><a href="login.html">Já possui uma conta?</a></span>
         </div>
         </div>
