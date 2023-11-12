@@ -23,15 +23,14 @@ html, body, .container{
     border-radius: 0 0 50% 50%;
 }*/
 .start{
-    border: solid 3px black;
+    border: solid 3px #111111;
     height: 500px;
     width: 300px;
     border-radius: 50% 0 0 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-color: black;
+    background-color: #111111;
 }
 .start button{
     border: none;
@@ -64,20 +63,20 @@ html, body, .container{
     flex-direction: column;
 }
 .mid{
-    border: solid 3px black;
+    border: solid 3px #111111;
     height: 500px;
     width: 800px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: #111111;
 }
 .end{
-    border: solid 3px black;
+    border: solid 3px #111111;
     height: 500px;
     width: 300px;
     border-radius: 0 50% 50% 0;
-    background-color: black;
+    background-color: #111111;
 }
 .screen{
     background-color: grey;
