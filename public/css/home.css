@@ -99,5 +99,16 @@ html, body, .container{
     height: 300px;
     border-radius: 27px;
     margin: 12px;
+    padding: 20px;
+    text-align: justify;
   }
- 
+  #curiosity{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    color: white;
+  }
+ .container-2 img{
+    cursor: pointer;
+  }
