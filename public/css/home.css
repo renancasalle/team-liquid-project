@@ -44,6 +44,7 @@ html, body, .container{
 }
 .container-center span{
     width: 500px;
+    line-height: 18pt;
 }
 .container-center h1{
     color: #261832;
