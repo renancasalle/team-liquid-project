@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Liquid - Login </title>
     <link rel="stylesheet" href="css/login.css">
+    <script src="js/login.js"></script>
 </head>
 <body>
     <div class="container">
@@ -15,11 +16,11 @@
         <div class="input">
             <!-- <span>Email</span> -->
             <input type="email
-            " placeholder="E-mail">
+            " placeholder="E-mail" id="input_email">
             <!-- <span>Senha</span> -->
-            <input type="password" placeholder="Senha"> <br>
+            <input type="password" placeholder="Senha" id="input_password"> <br>
             <!-- <span class="senha">Esqueceu a senha?</span> -->
-            <button>Login</button>
+            <button onclick="realizarLogin()">Login</button>
             <span class="senha"><a href="cadastro.html">Ainda não possui uma conta?</a></span>
         </div>
         </div>

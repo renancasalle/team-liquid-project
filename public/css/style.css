@@ -57,6 +57,7 @@ li{
 li:hover{
     color: #daa520;
     transition: ease-in-out;
+    transition: 0.4s;
 }
 a:hover{
     color: #daa520;
