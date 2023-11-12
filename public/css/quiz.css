@@ -27,7 +27,40 @@ html, body, .container{
     height: 500px;
     width: 300px;
     border-radius: 50% 0 0 50%;
-    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: black;
+}
+.start button{
+    border: none;
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: #303030;
+    color: white;
+}
+
+.container-start{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.direction-button{
+    display: flex;
+    transform: rotate(50deg);
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.column2{
+    display: flex;
+    flex-direction: column;
 }
 .mid{
     border: solid 3px black;
@@ -36,14 +69,14 @@ html, body, .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: black;*/
+    background-color: black;
 }
 .end{
     border: solid 3px black;
     height: 500px;
     width: 300px;
     border-radius: 0 50% 50% 0;
-    /*background-color: black;*/
+    background-color: black;
 }
 .screen{
     background-color: grey;
