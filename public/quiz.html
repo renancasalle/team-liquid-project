@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/quiz.css">
-    <script src="js/home.js"></script>
+    
 </head>
 <body>
     <div class="container">
@@ -13,19 +13,24 @@
                 <div class="container-start">
                 <div class="direction-button">
                 <div class="column">
-                <button>A</button>
-                <button>B</button>
+                <button id="buttonA" onclick="checkAnswer(this)" data-answer="A" data-question="0">A</button>
+                <button id="buttonB" onclick="checkAnswer(this)" data-answer="B" data-question="0">B</button>
             </div>
             <div class="column2">
-                <button>C</button>
-                <button>D</button>
+                <button id="buttonC" onclick="checkAnswer(this)" data-answer="C" data-question="0">C</button>
+                <button id="buttonD" onclick="checkAnswer(this)" data-answer="D" data-question="0">D</button>
             </div>
         </div>
             </div>
             </div>
             <div class="mid">
                 <div class="screen">
-                        
+                    <h1 id="titleQuestion">Em que ano foi criada a Team Liquid?</h1>
+                    <span id="alt1">A) 2013</span>
+                    <span id="alt2">B) 2011</span>
+                    <span id="alt3">C) 1999</span>
+                    <span id="alt4">D) 2000</span>
+                <img src="assents/png/liquid-black.jpg">
                 </div>
             </div>
             <div class="end"></div>
@@ -35,3 +40,5 @@
     </div>
 </body>
 </html>
+<script src="js/ques.js"></script>
+<script src="js/quiz.js"></script>

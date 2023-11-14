@@ -83,6 +83,7 @@ html, body, .container{
   .container-bottom button:active {
     box-shadow: 0 0 #3F6089;
     top: 5px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
   .container-2{
     display: flex;

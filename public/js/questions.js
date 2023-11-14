@@ -1,12 +1,21 @@
-const questions = [
-    {
-    question: "Em que ano foi criada a Team Liquid?",
-    answer: [
-        {text: "A) 2013", correct: false},
-        {text: "B) 2001", correct: false},
-        {text: "C) 1999", correct: false},
-        {text: "D) 2000", correct: true}
-    ]
+// const questions = [
+//     {
+//     question: "Em que ano foi criada a Team Liquid?",
+//     answer: [
+//         {text: "A) 2013", correct: false},
+//         {text: "B) 2001", correct: false},
+//         {text: "C) 1999", correct: false},
+//         {text: "D) 2000", correct: true}
+//     ]
+
+    const q1 = {
+        question: "Em que ano foi criada a Team Liquid?",
+        alt1: "A) 2013",
+        alt2: "B) 20011",
+        alt3: "C) 1999",
+        alt4: "D) 2000",
+        answers: "D"
+    }
 }, 
 {
     question: "Quem é o atual IGL (In-game Leader) do time de Rainbow Six?",
@@ -41,7 +50,7 @@ const questions = [
     {text: "A) Rafael 'Razah' Ribeiro", correct: false},
     {text: "B) Victor 'Nazgul' Goossens", correct: true},
     {text: "C) Jonathan 'EliGE' Jablonowski", correct: false},
-    {text: "D) Finn 'Karrigan' Andersen", correct: true},
+    {text: "D) Finn 'Karrigan' Andersen", correct: false},
     ]
 },
 {
@@ -67,11 +76,18 @@ const questions = [
     answers: [
         {text: "A) RazaH", correct: false},
         {text: "B) Rafa Manager", correct: true},
-        {text: "C) Silence", correct: true},
-        {text: "D) Daiki", correct: true},
+        {text: "C) Silence", correct: false},
+        {text: "D) Daiki", correct: false},
     ]
 },
 {
-    question: 
+    question: "A partir de qual jogo surgiu a Team Liquid?",
+    answers: [
+        {text: "A) DOTA 2", correct: false},
+        {text: "B) StarCraft II", correct: true},
+        {text: "C) World of Warcraft", correct: false},
+        {text: "D) Euro Gunz", correct: false},
+    ]
 }
 ]
+
