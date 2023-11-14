@@ -39,9 +39,39 @@ const questions = [
     question: "Quem é o fundador da Team Liquid?",
     answer:[ 
     {text: "A) Rafael 'Razah' Ribeiro", correct: false},
-    {text: "A) Victor 'Nazgul' Goossens", correct: true},
-    {text: "A) Jonathan 'EliGE' Jablonowski", correct: false},
-    {text: "A) Finn 'Karrigan' Andersen", correct: true},
+    {text: "B) Victor 'Nazgul' Goossens", correct: true},
+    {text: "C) Jonathan 'EliGE' Jablonowski", correct: false},
+    {text: "D) Finn 'Karrigan' Andersen", correct: true},
     ]
+},
+{
+    question: "Qual dos jogadores de Rainbow Six atuais está no time desde o começo?",
+    answer: [
+        {text: "A) Resetz", correct: false},
+        {text: "B) Paluh", correct: false},
+        {text: "C) Nesk", correct: true},
+        {text: "D) Lagonis", correct: false},
+    ]
+},
+{
+    question: "Qual time é o maior rival da Team Liquid no Rainbow Six?",
+    answer: [
+        {text: "A) Faze Clan", correct: true},
+        {text: "B) W7M", correct: false},
+        {text: "C) Ninjas in Pyjamas", correct: false},
+        {text: "D) Los One", correct: false},
+    ]
+},
+{
+    question: "Quem é o manager da Team Liquid Brasil?",
+    answers: [
+        {text: "A) RazaH", correct: false},
+        {text: "B) Rafa Manager", correct: true},
+        {text: "C) Silence", correct: true},
+        {text: "D) Daiki", correct: true},
+    ]
+},
+{
+    question: 
 }
 ]
