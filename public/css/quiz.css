@@ -78,7 +78,24 @@ html, body, .container{
     border-radius: 0 50% 50% 0;
     background-color: #111111;
 }
-.screen img{ 
+.screen{
+    background-image: url(../assents/png/liquid-black.jpg); 
     height: 400px;
     width: 750px;
+    background-size: 100%;
+    color: white;
+}
+.titleQuiz{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+.answerQuiz{
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 15px;
 }
