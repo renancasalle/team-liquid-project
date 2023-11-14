@@ -78,8 +78,7 @@ html, body, .container{
     border-radius: 0 50% 50% 0;
     background-color: #111111;
 }
-.screen{
-    background-color: grey;
+.screen img{ 
     height: 400px;
     width: 750px;
 }
