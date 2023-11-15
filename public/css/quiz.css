@@ -15,6 +15,7 @@ html, body, .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 /*.psp{
     border: solid 3px black;
@@ -70,6 +71,8 @@ html, body, .container{
     justify-content: center;
     align-items: center;
     background-color: #111111;
+    
+   
 }
 .end{
     border: solid 3px #111111;
@@ -77,6 +80,7 @@ html, body, .container{
     width: 300px;
     border-radius: 0 50% 50% 0;
     background-color: #111111;
+    
 }
 .screen{
     background-image: url(../assents/png/liquid-black.jpg); 

@@ -10,3 +10,6 @@ function realizarLogin(){
         alert("E-mail ou senha incorretos")
     }
 }
+function returIndex(){
+    window.location.href = "index.html"
+}

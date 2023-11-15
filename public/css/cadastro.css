@@ -35,6 +35,7 @@ body{
 .container-cadastro img{
     width: 500px;
     height: 180px;
+    cursor: pointer;
 }
 .input{
     height: 70%;
@@ -73,12 +74,8 @@ button:hover{
 span .senha{
     cursor: pointer;
 }
-.image-fallen{
-    height: 100%;
-    width: 60%;
-}
 .image-valorant img{
     height: 100%;
     width: 100%;
-    
+    object-fit: cover;
 }

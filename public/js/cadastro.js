@@ -16,3 +16,6 @@ function realizarCadastro(){
         window.location.href = "login.html"
     }
 }
+function returIndex(){
+    window.location.href = "index.html"
+}

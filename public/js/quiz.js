@@ -19,7 +19,7 @@ function checkAnswer(element){
     if(answer == questions[numberQuestion].answers){
         nextQuestion(numberQuestion + 1);
     }else {
-    // função do game over 
+        questionError()
     }
     
 }
@@ -37,6 +37,23 @@ function nextQuestion(numberQuestion){
     B.setAttribute("data-question", numberQuestion)
     C.setAttribute("data-question", numberQuestion)
     D.setAttribute("data-question", numberQuestion)
+}
+function questionError(){
+    alert("Voce perdeu!");
+
+    resetGame();
+}
+function resetGame(){
+    alt1.innerHTML  = ""
+    alt2.innerHTML  = ""
+    alt3.innerHTML  = ""
+    alt4.innerHTML  = ""
+
+    title.innerHTML = "Game Over! Deseja reiniciar o quiz?"
+
+    A.setAttribute("data-question", 0);
+    B.setAttribute("data-question", 0);
+    C.setAttribute("data-question", 0);
+    D.setAttribute("data-question", 0);
 
 }
-
