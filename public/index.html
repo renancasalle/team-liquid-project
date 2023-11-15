@@ -17,15 +17,16 @@
           />
         </div>
         <ul>
-          <li><a href="">Sobre</a></li>
-          <li>Rainbow Six</li>
-          <li>Jogadores</li>
-          <li>Sobre mim</li>
-          <li> <a href="login.html">Login</a> </li>
+          <li><a href="#link-r6">Rainbow Six</a></li>
+          <li><a href="#liquidR6">Jogadores</a></li>
+          <li><a href="#footer">Sobre mim</a></li>
+          <!--<li> <a href="login.html">Login</a> </li> -->
+          <li><button class="button-login" onclick="login()">Login</button></li>
         </ul>
       </div>
+      <div id="link-header"></div>
       <div class="column">
-        <span class="text1">
+        <span id="text1">
           <h3>Lorem</h3>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quasi
           elit. Facere quasi<br />
@@ -36,7 +37,7 @@
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
           quasi<br />
           Beatae minima facere sunt quos aspernatur<br />
-          <button class="btn">Saiba Mais</button>
+          <button class="btn" onclick="knowMore()">Saiba Mais</button>
         </span>
         <div class="image1">
           <img src="assents/svg/logo-grande (1).svg" />
@@ -44,6 +45,7 @@
       </div>
     </header>
     <main>
+      <div id="link-r6"></div>
       <section class="rainbowsix">
         <div class="columnrainbow1">
           <img src="assents/png/r6initial.jpg" />
@@ -72,9 +74,9 @@
           consectetur adipisicing elit. <br />
         </span>
       </section>
-      <section class="liquidR6">
+      <section id="liquidR6">
         <div class="about">
-          <div class="overview">
+          <div id="overview">
             <span>
               <h3>Team Liquid Brasil</h3>
               A equipe de Rainbow Six Siege da Team Liquid é amplamente
@@ -166,7 +168,7 @@
       </section>
 
       <section class="sobre-eu">
-        <div class="sobre-mim">
+        <div class="about-me">
           <span>
             <h3>Sobre mim</h3>
             Meu nome é Renan Casalle, tenho 18 anos e sou estudante de Análise e Densenvolvimento de Sistemas na SPTech. Esse é um projeto sobre a Team Liquid realizado para a faculdade. <br><br>
@@ -176,7 +178,7 @@
             Essa época de 2017 a 2019 é muito importante para mim por conta de lembranças boas tanto na escola quanto em casa jogando com meus amigos, muitas das pessoas que eu jogava naquela época continuam fazendo parte da minha vida, e o Xbox foi um dos grandes fatores para me aproximar dessas pessoas<br><br>
           </span>
         </div>
-        <div class="imagem-eu">
+        <div class="image-me">
           <div class="border-image-me">
           <img src="assents/png/eu.jpg" >
         </div>
@@ -184,16 +186,16 @@
       </section>
     </main>
 
-    <footer>
+    <footer id="footer">
       <div class="logo-footer">
         <img src="assents/svg/imagem_2023-10-20_215728277-removebg-preview (1).svg">
         <span>Copyright © 2023. Renan Casalle. All Rights Reserved</span>
       </div>
       <div class="menu">
         <ul>
-          <li> <img src="assents/svg/full-stop.svg">Sobre</li>
-          <li> <img src="assents/svg/full-stop.svg">Rainbow Six</li>
-          <li> <img src="assents/svg/full-stop.svg">Team Liquid Brasil</li>
+          <li> <img src="assents/svg/full-stop.svg"><a href="#link-header">Sobre</a></li>
+          <li> <img src="assents/svg/full-stop.svg"><a href="#link-r6">Rainbow Six</a></li>
+          <li> <img src="assents/svg/full-stop.svg"><a href="#liquidR6">Team Liquid Brasil</a></li>
           <li> <img src="assents/svg/full-stop.svg">Títulos</li>
         </ul> 
       </div>

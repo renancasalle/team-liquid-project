@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
   }
 html{
     height: 100%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Mako', sans-serif;
@@ -98,9 +99,25 @@ li {
     height: 75%;
     justify-content:space-around;
     margin-top: 70px;
-
 }
-.column span.text1{
+li button{
+    background-color: red;
+    border: none;
+    background-color: #daa520;
+    height: 32px;
+    width: 90px;
+    border-radius: 5px;
+    color: black;
+    cursor: pointer;
+    font-size: 16px;
+}
+li button:hover{
+    background-color: transparent;
+    border: solid 2px #daa520;
+    color: white;
+    transition: 0.4s;
+}
+.column span{
     text-align: start;
     color: white;
     font-size: 18px;
@@ -163,13 +180,21 @@ section.rainbowsix{
     background-image: linear-gradient(to right top, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
     display: flex;
 }
-section.liquidR6{
+section#liquidR6{
     height: 100%;
     background-image: #f2f2f2;
     /* .imagePlayers img{
         width: 680px;
         height: 450px;
     } */
+}
+#liquidR6 span{
+    color: #051827;
+    font-size: 22px;
+}
+#liquidR6 img{
+    height: 400px;
+    width: 630px;
 }
 .about{
     display: flex;
@@ -182,17 +207,12 @@ section.liquidR6{
     color: #051827;
     font-size: 18px;
 }
-.liquidR6 img{
-    height: 400px;
-    width: 630px;
-}
 .columnPL{
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 50%;
-    margin-left: 30px;
-    margin-top: 130px;
+    
 }
 .txtPL span{
     color: #051827;
@@ -201,6 +221,7 @@ section.liquidR6{
 .title{
     display: flex;
     justify-content: center;
+    height: 100px;
 }
 .title h1{
 color: #daa520;
@@ -211,10 +232,6 @@ font-size: 40px;
 .span-bottom-image {
     color: #051827;
     font-weight: 600;
-}
-.liquidR6 span{
-    color: #051827;
-    font-size: 22px;
 }
 .BR6{
     height: 60%;
@@ -234,7 +251,7 @@ font-size: 40px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    height: 700px;
+    height: 600px;
 }
 footer .perdoa{
     height: 100%;
@@ -249,25 +266,25 @@ footer .perdoa{
     justify-content: center;
     align-items: center;
 }
-.imagem-eu{
+.image-me{
     height: 100%;
     width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.sobre-mim{
-    height: 100%;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imagem-eu img{
+.image-me img{
     height: 500px;
     width: 500px;
 }
-.sobre-mim span{
+.about-me{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-me span{
     height: 300px;
     width: 700px;
     text-align: justify;
