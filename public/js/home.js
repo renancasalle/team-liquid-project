@@ -13,6 +13,15 @@ var curiosities = ["Os fãs da Team Liquid são frequentemente chamados de 'Liqu
 
 "A Team Liquid alcançou a fama internacional em 2017 ao vencer o The International 7, um dos maiores torneios de Dota 2. Eles se tornaram os campeões e conquistaram um prêmio significativo.",
 
+"A Team Liquid tem uma forte presença no cenário de StarCraft, com muitos jogadores talentosos. Eles mantêm uma equipe desde o início dos anos 2000 e continuam sendo uma força competitiva.",
+
+"Em 2019, a Team Liquid anunciou uma parceria com a Marvel Entertainment para criar roupas temáticas e conteúdo exclusivo, tornando-se uma das primeiras equipes de esportes eletrônicos a colaborar com a renomada empresa de entretenimento.",
+
+"A equipe de Counter-Strike: Global Offensive da Team Liquid é considerada uma das melhores do mundo. Eles conquistaram diversos títulos e consistentemente competem no mais alto nível.",
+
+"Além de sua presença na América do Norte, a Team Liquid expandiu suas operações para outras regiões, incluindo Europa e América do Sul, garantindo uma base global de fãs.",
+
+"Ao longo dos anos, a Team Liquid recebeu vários prêmios e reconhecimentos da indústria de esportes eletrônicos, solidificando sua posição como uma das organizações mais respeitadas e bem-sucedidas no cenário global."
 ]
 window.addEventListener("load", generate)
 function generate(){ 
