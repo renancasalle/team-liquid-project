@@ -44,16 +44,13 @@ function questionError(){
     resetGame();
 }
 function resetGame(){
-    alt1.innerHTML  = ""
-    alt2.innerHTML  = ""
-    alt3.innerHTML  = ""
-    alt4.innerHTML  = ""
+    // Adicione a lógica para reiniciar o jogo, como redefinir variáveis, reiniciar a pontuação, etc.
+    // Por exemplo:
+    title.innerHTML = "Em que ano foi criada a Team Liquid?"; // Defina o título de volta para o início
 
-    title.innerHTML = "Game Over! Deseja reiniciar o quiz?"
-
-    A.setAttribute("data-question", 0);
-    B.setAttribute("data-question", 0);
-    C.setAttribute("data-question", 0);
-    D.setAttribute("data-question", 0);
+    alt1.innerHTML  = questions[0].alt1
+    alt2.innerHTML = questions[0].alt2
+    alt3.innerHTML = questions[0].alt3
+    alt4.innerHTML = questions[0].alt4
 
 }

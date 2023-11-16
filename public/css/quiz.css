@@ -31,25 +31,47 @@ html, body, .container{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     background-color: #111111;
-}
-.start button{
-    border: none;
-    border-radius: 50%;
-    height: 45px;
-    width: 45px;
-    cursor: pointer;
-    margin: 20px;
-    background-color: #303030;
-    color: white;
-    transform: rotate(-50deg);
-}
-
-.container-start{
-    height: 50%;
     display: flex;
-    justify-content: center;
+}
+.ps4-button-b{
+    color: #303030;
+    font-size: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+.ps4-button-r{
+    color: #303030;
+    font-size: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    margin-left: 160px;
+}
+.entre{
+    display: flex;
     align-items: center;
+    justify-content: center;
+    width: 100px;
+}
+.ps4-button-l{
+    color: #303030;
+    font-size: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    margin-right: 160px;
+    display: flex;
+    justify-content: space-around;
+}
+.ps4-button-t{
+    color: #303030;
+    font-size: 32px;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
 }
 .direction-button{
     display: flex;
@@ -74,14 +96,6 @@ html, body, .container{
     
    
 }
-.end{
-    border: solid 3px #111111;
-    height: 500px;
-    width: 300px;
-    border-radius: 0 50% 50% 0;
-    background-color: #111111;
-    
-}
 .screen{
     background-image: url(../assents/png/liquid-black.jpg); 
     height: 400px;
@@ -102,4 +116,45 @@ html, body, .container{
     flex-direction: column;
     justify-content: space-evenly;
     padding: 15px;
+}
+
+.end{
+    border: solid 3px #111111;
+    height: 500px;
+    width: 300px;
+    border-radius: 0 50% 50% 0;
+    background-color: #111111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #111111;
+}
+.container-end{
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-end{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-right: 70px;
+    width: 100%;
+}
+.text-end span{
+    margin: 10px;
+}
+.end button{
+    border: none;
+    border-radius: 50%;
+    height: 53px;
+    width: 53px;
+    cursor: pointer;
+    margin: 20px;
+    background-color: #303030;
+    color: white;
+    transform: rotate(-50deg);
 }
