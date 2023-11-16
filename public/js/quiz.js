@@ -53,4 +53,8 @@ function resetGame(){
     alt3.innerHTML = questions[0].alt3
     alt4.innerHTML = questions[0].alt4
 
+    A.setAttribute("data-question", 0)
+    B.setAttribute("data-question", 0)
+    C.setAttribute("data-question", 0)
+    D.setAttribute("data-question", 0)
 }

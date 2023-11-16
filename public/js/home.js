@@ -1,7 +1,7 @@
 
 var curiosities = ["Os fãs da Team Liquid são frequentemente chamados de 'Liquidians' ou 'Liquid Fans'. Esse apelido carinhoso destaca a forte comunidade de torcedores que se desenvolveu em torno da equipe ao longo dos anos.",
 
-"A Team Liquid mantém uma equipe feminina de Counter-Strike: Global Offensive, demonstrando seu compromisso com a inclusão e o apoio ao crescimento do cenário competitivo feminino nos esportes eletrônicos.",
+"A Team Liquid mantém uma equipe feminina de Valorant, demonstrando seu compromisso com a inclusão e o apoio ao crescimento do cenário competitivo feminino nos esportes eletrônicos.",
 
 "A Team Liquid foi uma das organizações de esportes eletrônicos convidadas a participar da edição inaugural dos Jogos Olímpicos Virtuais em 2018. Esse convite destacou o reconhecimento dos esportes eletrônicos em eventos de prestígio",
 
