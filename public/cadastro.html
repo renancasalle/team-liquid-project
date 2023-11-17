@@ -1,33 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TeamLiquid - Cadastro</title>
-    <link rel="stylesheet" href="css/cadastro.css">
-    <link rel="shortcut icon" href="assents/png/logo-liquid.png" type="image/x-icon">
-    <script src="js/cadastro.js"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="css/cadastro.css" />
+    <link
+      rel="shortcut icon"
+      href="assents/png/logo-liquid.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <div class="container">
-        <div class="image-valorant">
-            <img src="assents/png/asminasdovava.png" alt="">
-        </div>
-        <div class="container-cadastro">
-            <div class="logo-cadastro">
-            <img src="assents/svg/imagem_2023-10-20_215728277-removebg-preview (1).svg" onclick="returIndex()">
+      <div class="image-valorant">
+        <img src="assents/png/asminasdovava.png" alt="" />
+      </div>
+      <div class="container-cadastro">
+        <div class="logo-cadastro">
+          <img
+            src="assents/svg/imagem_2023-10-20_215728277-removebg-preview (1).svg"
+            onclick="returIndex()"
+          />
         </div>
         <div class="input">
-            <!-- <span>E-mail</span> -->
-            <input type="text" placeholder="E-mail" id="input_email">
-           <!-- <span>Senha</span> -->
-            <input type="password" placeholder="Senha" id="input_password">
+          <!-- <span>E-mail</span> -->
+          <input type="text" placeholder="E-mail" id="input_email" />
+          <!-- <span>Senha</span> -->
+          <input type="password" placeholder="Senha" id="input_password" />
           <!--  <span>Confirme sua senha</span> -->
-            <input type="password" placeholder="Confirme sua senha" id="input_confirmPassword">
-            <button onclick="realizarCadastro()">Cadastrar-se</button>
-            <span><a href="login.html">Já possui uma conta?</a></span>
+          <input
+            type="password"
+            placeholder="Confirme sua senha"
+            id="input_confirmPassword"
+          />
+          <button onclick="realizarCadastro()">Cadastrar-se</button>
+
+          <dialog id="modal">
+            <h2></h2>
+            <p id="textoModal"></p>
+
+            <button onclick="closeModal()" id="btnOK">Ok</button>
+          </dialog>
+          <span><a href="login.html">Já possui uma conta?</a></span>
         </div>
-        </div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
+<script src="js/cadastro.js"></script>

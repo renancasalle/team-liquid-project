@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Mako&family=Roboto:wght@400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body, .container{
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    overflow: hidden;
+}
+.container{
+    /*background-color: #0b2447;*/
+    background-image: url(../assents/png/TL_Neon_Logo_Desktop.jpg);
+    background-size: 1100px;
+    
+}
+.title{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.title img{
+    width: 300px;
+    height: 80px;
+}
+.card1{
+    height:85%;
+    width: 50%;
+    
+}
+.container1-card{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.block{
+    background-color: rgba(42, 100, 139, 0.4);
+    border-radius: 8px;
+    height: 50px;
+    width: 50px;
+    
+}
+.container2-card{
+    height: 50%;
+    width: 100%;
+}
+.card2{
+    height: 85%;
+    width: 50%;
+}

@@ -37,7 +37,9 @@ function generate(){
     
     
     }
-    
-    function abrirQuiz(){
+    function openQuiz(){
         window.location.href= "quiz.html"
+    }
+    function viewData(){
+        window.location.href = "analytics.html"
     }

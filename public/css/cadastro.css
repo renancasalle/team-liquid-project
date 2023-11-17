@@ -79,3 +79,27 @@ span .senha{
     width: 100%;
     object-fit: cover;
 }
+#modal{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 350px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+#modal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnOK{
+    height: 30px;
+    width: 30px;
+}
