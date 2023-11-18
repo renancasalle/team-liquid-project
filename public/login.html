@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Team Liquid - Login </title>
     <link rel="stylesheet" href="css/login.css">
-    <script src="js/login.js"></script>
 </head>
 <body>
     <div class="container">
@@ -23,6 +22,15 @@
             <!-- <span class="senha">Esqueceu a senha?</span> -->
             <button onclick="realizarLogin()">Login</button>
             <span class="senha"><a href="cadastro.html">Ainda não possui uma conta?</a></span>
+            <dialog id="modal">
+                <div class="paiNosso">
+                  <img src="assents/svg/warning.svg">
+                <h2></h2>
+                <p id="textoModal"></p>
+    
+                <button onclick="closeModal()" id="btnOK">Ok</button>
+              </div>
+              </dialog>
         </div>
         </div>
         <div class="image-fallen">
@@ -32,3 +40,4 @@
     </div>
 </body>
 </html>
+<script src="js/login.js"></script>

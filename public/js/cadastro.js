@@ -11,13 +11,15 @@ function realizarCadastro() {
     var emailTest = re.test(email);
 
     if (!emailTest) {
-        openModal("tmj")
+        openModal("<b>Insira um E-mail válido.</b>")
     } else if (password == "" || confirmPassword == "") {
-        alert("É necessário preencher todos os campos");
+       openModal("<b>É necessário preencher todos os campos</b>");
     } else if (password != confirmPassword) {
-        alert("As senhas não coincidem.");
+        openModal("<b>As senhas não coincidem.</b>");
+    } else if (password.length < 8 || confirmPassword.length < 8){
+        openModal("<b> A senha tem que ter no minimo 8 caracteres")
     } else {
-        alert("Cadastro realizado com sucesso!");
+        openModal("<b>Cadastro realizado com sucesso!</b>");
         window.location.href = "login.html";
     }
 }
