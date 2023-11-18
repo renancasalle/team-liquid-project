@@ -4,11 +4,11 @@ const textoModal = document.getElementById("textoModal");
 const buttonClose = document.querySelector("dialog button")
 
 function realizarCadastro() {
-    var re = /\S+@\S+\.\S+/;
-    var email = input_email.value;
-    var password = input_password.value;
-    var confirmPassword = input_confirmPassword.value;
-    var emailTest = re.test(email);
+    let re = /\S+@\S+\.\S+/;
+    let email = input_email.value;
+    let password = input_password.value;
+    let confirmPassword = input_confirmPassword.value;
+    let emailTest = re.test(email);
 
     if (!emailTest) {
         openModal("<b>Insira um E-mail válido.</b>")

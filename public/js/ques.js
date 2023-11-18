@@ -70,11 +70,46 @@ const q9 = {
     alt4: "D) Euro Gunz",
     answers: "B"
 }
-// const q = {
-//     question:
-//     alt1:
-//     alt2:
-//     alt3:
-//     alt4:
-//     answers:
-// }
+const q10 = {
+    question: "Qual desses jogadores nunca fizeram parte da line de Rainbow Six?",
+    alt1: "A) Gohan",
+    alt2: "B) xSexyCake",
+    alt3: "C) Astro",
+    alt4: "D) Bullet1",
+    answers: "C"
+}
+const q11 = {
+    question: "Qual é o jogo mais associado a Team Liquid?",
+    alt1: "A) Dota 2",
+    alt2: "B) Rainbow Six",
+    alt3: "C) CS:GO",
+    alt4: "D) Valorant",
+    answers: "A"
+}
+const q12 = {
+    question: "Qual foi o primeiro título no Rainbow Six da Team Liquid?",
+    alt1: "A) Six Invitation 2018",
+    alt2: "B) Pro League Season 7",
+    alt3: "C) Six Major Paris",
+    alt4: "D) DreamHack Winter 2018",
+    answers: "A"
+}
+const q13 = {
+    question: "Quem é atualmente o coach da equipe de Rainbow Six?",
+    alt1: "A) Razah",
+    alt2: "B) Fabian",
+    alt3: "C) HugZord",
+    alt4: "D) Alem4o",
+    answers: "C"
+}
+const q14 = {
+    question: "Qual o nome da enciclopédia de eSports da Team Liquid?",
+    alt1: "A) Wikipedia",
+    alt2: "B) Liquipedia",
+    alt3: "C) Liquiwiki",
+    alt4: "D) PediaLiqui",
+    answers: "B"
+}
+const q15 = {
+    
+}
