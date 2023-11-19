@@ -118,9 +118,8 @@ li button:hover{
     transition: 0.4s;
 }
 .column span{
-    text-align: start;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 .column h3{
     color: #daa520;
@@ -158,6 +157,7 @@ li button:hover{
     justify-content: space-evenly;
     align-items: center;
     padding-bottom: 70px;
+    color: white;
 }
 section img{
     height: 450px;
@@ -169,12 +169,7 @@ section h3{
     margin-bottom: 20px;
     font-size: 26px;
 }
-section span{
-    text-align: startx;
-    color: white;
-    font-size: 18px;
-    margin-top: 50px;
-}
+
 section.rainbowsix{
     background: rgb(32,32,32);
     background-image: linear-gradient(to right top, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
@@ -204,8 +199,11 @@ section#liquidR6{
     margin-left: 30px;
 }
 .about span{
-    color: #051827;
-    font-size: 18px;
+    height: 320px;
+    width: 700px;
+    text-align: justify;
+    font-size: 22px;
+    
 }
 .columnPL{
     display: flex;
@@ -232,9 +230,10 @@ font-size: 40px;
 .span-bottom-image {
     color: #051827;
     font-weight: 600;
+    font-size: 10px;
 }
 .BR6{
-    height: 60%;
+    height: 550px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -259,7 +258,7 @@ footer .perdoa{
     z-index: 10;
 }
 
-.sobre-eu{
+.developer{
     height: 800px;
     background-image: linear-gradient(to right bottom, #1c1f22, #171d23, #121c25, #0c1a26, #051827);
     display: flex;
@@ -283,11 +282,14 @@ footer .perdoa{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 180px;
 }
 .about-me span{
     height: 300px;
     width: 700px;
     text-align: justify;
+    color: white;
+    font-size: 20px;
 }
 footer{
     height: 250px;
@@ -356,6 +358,7 @@ footer{
     height: 320px;
     width: 700px;
     text-align: justify;
+    font-size: 22px;
 }
 .border-image-me{
     border: solid 2px #daa520;
