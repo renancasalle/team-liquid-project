@@ -86,15 +86,16 @@ span .senha{
     flex-direction: column;
     height: 300px;
     width: 350px;
-    background-color: rgba(255, 255, 255, 0.6);
-    border: solid 3px#0b2447;
+    background-color: rgba(11, 36, 71, 0.7);
+    border: solid 3px#daa520;
     border-radius: 8px;
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-60%, -50%);
     padding: 5px;
     text-align: center;
+    color: #fff;
 }
 #modal.active{
     display: flex;

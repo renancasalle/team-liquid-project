@@ -11,8 +11,6 @@ function realizarLogin() {
 
     if (!emailTest) {
         openModal("<b>Insira um E-mail válido.</b>")
-    } else if (password == "") {
-       openModal("<b>É necessário preencher todos os campos</b>");
     } else if (password != 12345678 || password.length < 8) {
         openModal("<b>Senha incorreta.</b>");
     } else {

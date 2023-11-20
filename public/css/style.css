@@ -136,12 +136,12 @@ li button:hover{
     color: white;
     cursor: pointer;
     font-weight:lighter;
+    color: black;
 }
 .column button.btn:hover{
     width: 196px;
     height: 55px;
-    transition: 0.6s ease-in;
-    box-shadow:inset 3px 3px 3px #505050;
+    transition: 0.4s;
 }
 .column .image1{
     display: flex;
@@ -325,6 +325,14 @@ footer{
     height: 35px;
     width: 35px;
     margin: 10px;
+}
+.social-medias a{
+    height: 65px;
+}
+.social-medias img:hover{
+    height: 40px;
+    width: 40px;
+    transition: 0.4s;
 }
 /*.about::before{
     content: "";
