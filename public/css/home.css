@@ -26,9 +26,7 @@ html, body, .container{
 .container-top{
     width: 100%;
     height: 25%;
-
 }
-
 .container-top img{
     height: 220px;
     width: 500px;
@@ -86,7 +84,7 @@ html, body, .container{
     top: 5px;
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.3);
   }
-  .container-2{
+.container-2{
     display: flex;
     justify-content: center;
     align-items: center;
