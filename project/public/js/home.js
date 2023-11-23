@@ -26,7 +26,7 @@ var curiosities = ["Os fãs da Team Liquid são frequentemente chamados de 'Liqu
 window.addEventListener("load", generate)
 function generate(){ 
     curiosity.innerHTML = ""
-    var aleatorio = parseInt(Math.random() * 3)
+    var aleatorio = parseInt(Math.random() * 12)
     var i = 0
     
     while(i < curiosities.length){

@@ -92,7 +92,7 @@ const q12 = {
     alt2: "B) Pro League Season 7",
     alt3: "C) Six Major Paris",
     alt4: "D) DreamHack Winter 2018",
-    answers: "A"
+    answers: "B"
 }
 const q13 = {
     question: "Quem é atualmente o coach da equipe de Rainbow Six?",
@@ -109,7 +109,4 @@ const q14 = {
     alt3: "C) Liquiwiki",
     alt4: "D) PediaLiqui",
     answers: "B"
-}
-const q15 = {
-    
 }

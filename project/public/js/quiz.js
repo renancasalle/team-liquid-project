@@ -1,5 +1,6 @@
 const questions = [q1, q2, q3, q4, q5, q6, q7, q8, q9, q10, q11, q12, q13, q14]
 const title = document.getElementById("titleQuestion")
+const screen = document.querySelector(".screen")
 
 const alt1 = document.getElementById("alt1")
 const alt2 = document.getElementById("alt2")
@@ -16,11 +17,21 @@ function checkAnswer(element){
     var answer =  element.getAttribute("data-answer");
     var numberQuestion = Number(element.getAttribute("data-question"))
 
-    if(answer == questions[numberQuestion].answers){
+    if(numberQuestion == 13 && answer == questions[numberQuestion].answers){
+        screen.innerHTML = `<img src="assents/png/liquid-bicampea.jpeg">`
+    }else if (answer == questions[numberQuestion].answers){
         nextQuestion(numberQuestion + 1);
-    }else {
+    }else{
         questionError()
     }
+
+    // if(answer == questions[numberQuestion].answers){
+    //     nextQuestion(numberQuestion + 1);
+    // }else if (numberQuestion == 14 && answer == questions[numberQuestion].answers){
+    //     title.innerHTML = "oi"
+    // }else {
+    //     questionError()
+    // }
     
 }
 

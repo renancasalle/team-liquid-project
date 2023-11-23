@@ -51,9 +51,9 @@ html, body, .container{
     align-items: center;
     justify-content: center;
 }
-.start-2 img{
-    height: 200px;
-    width: 270px;
+.screen img{
+    height: 100%;
+    width: 100%;
 }
 .start-3{
     height: 30%;
