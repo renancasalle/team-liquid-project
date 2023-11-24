@@ -54,4 +54,6 @@ html, body, .container{
 .card2{
     height: 85%;
     width: 50%;
+    display: flex;
+    flex-direction: column;
 }
