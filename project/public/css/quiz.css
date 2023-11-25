@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mako&family=Roboto:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mako&family=Orbitron:wght@400;500;600;700;800;900&family=Roboto:wght@400;500&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -127,7 +128,11 @@ html, body, .container{
     align-items: center;
     background-color: #111111;
     
-   
+}
+.end-game{
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 .screen{
     background-image: url(../assents/png/liquid-black.jpg); 

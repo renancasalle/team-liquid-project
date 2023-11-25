@@ -1,9 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Mako&family=Roboto:wght@400;500&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+.card2::-webkit-scrollbar {
+    width: 9px;             
+  }
+  
+  .card2::-webkit-scrollbar-track {
+    background: #303030;        
+  }
+  
+  .card2::-webkit-scrollbar-thumb {
+    background-color:  #daa520;    
+    border-radius: 20px;       
+    border: 3px solid #daa520;  
+  }
 html, body, .container{
     height: 100%;
     width: 100%;
@@ -70,6 +84,7 @@ html, body, .container{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    overflow-y: scroll;
 }
 .box{
     height: 180px;
@@ -77,4 +92,52 @@ html, body, .container{
     background-color: #303030;
     border-radius: 26px;
     border: solid 2px #daa520;
+}
+dialog img{
+    height: 50px;
+    width: 50px;
+    display: flex;
+    cursor: pointer;
+}
+#modal{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    width: 350px;
+    background-color: rgba(11, 36, 71, 0.7);
+    border: solid 3px#daa520;
+    border-radius: 8px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-60%, -50%);
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+}
+#modal.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#btnOK{
+    height: 35px;
+    width:50px;
+}
+.avaliable{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+.card-bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+#myChart{
+    height: 400px;
+    width: 350px;
 }

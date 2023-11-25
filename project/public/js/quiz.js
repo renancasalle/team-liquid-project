@@ -13,26 +13,33 @@ const B = document.getElementById("buttonB")
 const C = document.getElementById("buttonC")
 const D = document.getElementById("buttonD")
 
-function checkAnswer(element){
-    var answer =  element.getAttribute("data-answer");
-    var numberQuestion = Number(element.getAttribute("data-question"))
+let time = 0
+let timer;
 
-    if(numberQuestion == 13 && answer == questions[numberQuestion].answers){
-        screen.innerHTML = `<img src="assents/png/liquid-bicampea.jpeg">`
+
+function checkAnswer(element){
+    const answer =  element.getAttribute("data-answer");
+    const numberQuestion = Number(element.getAttribute("data-question"))
+    const endgame = document.querySelector(".screen")
+
+    // quiz inicia a partir do momento em que o usuario aperta o botao correto.
+    timer = setInterval(function () {
+        time++
+        
+    }, 1000);
+
+    if(numberQuestion == 1 && answer == questions[numberQuestion].answers){
+        endgame.innerHTML = `<img src="assents/png/liquid-bicampea.jpeg">`
+        endgame.innerHTML = time
+
+        endgame.classList.add("active")
+
+        clearInterval(timer);
     }else if (answer == questions[numberQuestion].answers){
         nextQuestion(numberQuestion + 1);
     }else{
         questionError()
     }
-
-    // if(answer == questions[numberQuestion].answers){
-    //     nextQuestion(numberQuestion + 1);
-    // }else if (numberQuestion == 14 && answer == questions[numberQuestion].answers){
-    //     title.innerHTML = "oi"
-    // }else {
-    //     questionError()
-    // }
-    
 }
 
 function nextQuestion(numberQuestion){
@@ -55,9 +62,8 @@ function questionError(){
     resetGame();
 }
 function resetGame(){
-    // Adicione a lógica para reiniciar o jogo, como redefinir variáveis, reiniciar a pontuação, etc.
-    // Por exemplo:
-    title.innerHTML = "Em que ano foi criada a Team Liquid?"; // Defina o título de volta para o início
+
+    title.innerHTML = "Em que ano foi criada a Team Liquid?"; 
 
     alt1.innerHTML  = questions[0].alt1
     alt2.innerHTML = questions[0].alt2
@@ -69,3 +75,4 @@ function resetGame(){
     C.setAttribute("data-question", 0)
     D.setAttribute("data-question", 0)
 }
+

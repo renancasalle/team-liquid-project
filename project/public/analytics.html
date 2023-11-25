@@ -1,34 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/analytics2.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dados - Team Liquid</title>
+    <link rel="shortcut icon" href="assents/png/logo-liquid.png" />
+    <link rel="stylesheet" href="css/analytics2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
     <div class="container">
-        <div class="card1">
-            <div class="block1">
-                <img src="assents/svg/imagem_2023-10-20_215728277-removebg-preview (1).svg">
-            </div>
-            <div class="block2">
-                <div class="card-center"></div>
-                <div class="card-center"></div>
-                <div class="card-center"></div>
-            </div>
-            <div class="block3">
-                <div class="card-bottom"></div>
-                <div class="card-bottom"></div>
-            </div>
+      <div class="card1">
+        <div class="block1">
+          <img
+            src="assents/svg/imagem_2023-10-20_215728277-removebg-preview (1).svg"
+          />
         </div>
-        <div class="card2">
-            <!-- <h3>Feedbacks</h3> -->
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
+        <div class="block2">
+          <div class="card-center"></div>
+          <div class="card-center"></div>
+          <div class="card-center"></div>
         </div>
+        <div class="block3">
+          <div class="card-bottom">
+            <div>
+  <canvas id="myChart"></canvas>
+</div>
+
+<script>
+  const ctx = document.getElementById('myChart');
+
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        }
+      }
+    }
+  });
+</script>
+          </div>
+
+          
+          <div class="card-bottom">
+
+           
+              
+          </div>
+        </div>
+      </div>
+      <div class="card2">
+        <!-- <h3>Feedbacks</h3> -->
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+      </div>
     </div>
-</body>
+    <dialog id="modal">
+      <h2>Deseja avaliar sua expêriencia?</h2>
+      <div class="avaliable">
+        <img src="assents/svg/13595-removebg-preview.svg" />
+        <img src="assents/svg/13595-removebg-preview.svg" />
+        <img src="assents/svg/13595-removebg-preview.svg" />
+        <img src="assents/svg/13595-removebg-preview.svg" />
+        <img src="assents/svg/13595-removebg-preview.svg" />
+      </div>
+      <button id="btnOK" onclick="closeModal()">Avaliar</button>
+    </dialog>
+  </body>
 </html>
+<script src="js/analytics.js"></script>

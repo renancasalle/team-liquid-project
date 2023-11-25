@@ -23,7 +23,9 @@ var curiosities = ["Os fãs da Team Liquid são frequentemente chamados de 'Liqu
 
 "Ao longo dos anos, a Team Liquid recebeu vários prêmios e reconhecimentos da indústria de esportes eletrônicos, solidificando sua posição como uma das organizações mais respeitadas e bem-sucedidas no cenário global."
 ]
+
 window.addEventListener("load", generate)
+
 function generate(){ 
     curiosity.innerHTML = ""
     var aleatorio = parseInt(Math.random() * 12)
