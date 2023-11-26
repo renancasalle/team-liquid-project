@@ -52,10 +52,6 @@ html, body, .container{
     align-items: center;
     justify-content: center;
 }
-.screen img{
-    height: 100%;
-    width: 100%;
-}
 .start-3{
     height: 30%;
     width: 100%;
@@ -129,17 +125,31 @@ html, body, .container{
     background-color: #111111;
     
 }
-.end-game{
-    height: 100%;
-    width: 100%;
-    display: none;
-}
 .screen{
     background-image: url(../assents/png/liquid-black.jpg); 
     height: 400px;
     width: 750px;
     background-size: 100%;
     color: white;
+}
+.screen img{
+    height: 100%;
+    width: 100%;
+}
+.screen.active{
+    display: none;
+}
+.endgame{
+    height: 400px;
+    width: 750px;
+    display: none;
+    
+}
+.endgame.active{
+    display: flex;
+    height: 400px;
+    width: 750px;
+    background-color: #fff;
 }
 .titleQuiz{
     height: 40%;

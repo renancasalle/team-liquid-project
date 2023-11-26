@@ -98,6 +98,7 @@ dialog img{
     width: 50px;
     display: flex;
     cursor: pointer;
+    margin: 5px;
 }
 #modal{
     display: none;
@@ -140,4 +141,11 @@ dialog img{
 #myChart{
     height: 400px;
     width: 350px;
+}
+#modal button{
+    border: none;
+    border-radius: 12px;
+    width: 90px;
+
+    background-color: #daa520;
 }

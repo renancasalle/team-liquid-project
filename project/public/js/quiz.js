@@ -7,7 +7,6 @@ const alt2 = document.getElementById("alt2")
 const alt3 = document.getElementById("alt3")
 const alt4 = document.getElementById("alt4")
 
-
 const A = document.getElementById("buttonA")
 const B = document.getElementById("buttonB")
 const C = document.getElementById("buttonC")
@@ -16,8 +15,8 @@ const D = document.getElementById("buttonD")
 let time = 0
 let timer;
 
-
 function checkAnswer(element){
+
     const answer =  element.getAttribute("data-answer");
     const numberQuestion = Number(element.getAttribute("data-question"))
     const endgame = document.querySelector(".screen")
@@ -28,11 +27,17 @@ function checkAnswer(element){
         
     }, 1000);
 
-    if(numberQuestion == 1 && answer == questions[numberQuestion].answers){
-        endgame.innerHTML = `<img src="assents/png/liquid-bicampea.jpeg">`
-        endgame.innerHTML = time
-
+    if(numberQuestion == 0 && answer == questions[numberQuestion].answers){
         endgame.classList.add("active")
+        screen.classList.add("active")
+
+        endgame.innerHTML += `<img src="assents/png/liquid-bicampea.jpeg">`
+        endgame.innerHTML += time
+
+
+
+        //screen.innerHTML = `<img src="assents/png/liquid-bicampea.jpeg">`
+       // screen.innerHTML += time
 
         clearInterval(timer);
     }else if (answer == questions[numberQuestion].answers){
