@@ -17,7 +17,7 @@ function selectStar(element) {
     if (star = ""){
         alert("É necessário avaliar o quiz para")
     }else if(star == 1){
-        avaliable.innerHTML += `
+        avaliable.innerHTML = `
         <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
         <img src="assents/svg/13595-removebg-preview.svg" />
         <img src="assents/svg/13595-removebg-preview.svg" />
@@ -26,7 +26,7 @@ function selectStar(element) {
         `
     
     }else if(star == 2){
-        avaliable.innerHTML += `
+        avaliable.innerHTML = `
         <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
         <img src="assents/svg/13595-removebg-preview.svg" />
@@ -34,7 +34,7 @@ function selectStar(element) {
         <img src="assents/svg/13595-removebg-preview.svg" />
         `
     }else if(star == 3){
-        avaliable.innerHTML -= `
+        avaliable.innerHTML = `
         <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
@@ -49,15 +49,15 @@ function selectStar(element) {
         <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
         <img src="assents/svg/13595-removebg-preview.svg"
         `
-    }else{
-        avaliable.innerHTML = `
-        <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-        <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-        <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-        <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-        <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-        `
-    }
+    //}else{
+    //    avaliable.innerHTML = `
+    //    <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
+    //    <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
+    //    <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
+    //    <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
+    //    <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
+    //    `
+    //}
 }
-
+}
 window.addEventListener("load", openModal);
