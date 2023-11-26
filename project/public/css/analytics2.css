@@ -61,6 +61,27 @@ html, body, .container{
     background-color: #303030;
     border: solid 2px #daa520;
     border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f2f2f2;
+}
+.topic{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 12px;
+}
+.data-kpi{
+    height: 50%;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    display: flexç
 }
 .block3{
     height: 50%;
@@ -76,6 +97,10 @@ html, body, .container{
     border: solid 2px #daa520;
     border-radius: 30px;
 
+}
+#pieChart{
+    height: 100px;
+    width: 300px;
 }
 .card2{
     height: 100%;
@@ -102,6 +127,7 @@ html, body, .container{
     align-items: center;
     justify-content: start;
     padding: 10px;
+    color: #f2f2f2;
 }
 .user-rating{
     height: 70%;

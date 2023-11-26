@@ -17,9 +17,22 @@
           />
         </div>
         <div class="block2">
-          <div class="card-center"></div>
-          <div class="card-center"></div>
-          <div class="card-center"></div>
+          <div class="card-center">
+            <div class="topic">
+              <span>Usuários cadastrados</span>
+            </div>
+            <div class="data-kpi">
+              <h1>40</h1>
+            </div>
+          </div>
+          <div class="card-center">
+            <div class="topic"></div>
+            <div class="data-kpi"></div>
+          </div>
+          <div class="card-center">
+            <div class="topic"></div>
+            <div class="data-kpi"></div>
+          </div>
         </div>
         <div class="block3">
           <div class="card-bottom">
@@ -33,10 +46,11 @@
   new Chart(ctx, {
     type: 'bar',
     data: {
-      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+      
+      labels: ['1 Estrela', '2 Estrelas', '3 Estrelas', '4 Estrelas', '5 Estrelas'],
       datasets: [{
         label: 'Avaliação média dos usúario:',
-        data: [12, 19, 3, 5, 2, 3],
+        data: [1, 1, 1, 3, 5],
         borderWidth: 1
       }]
     },
@@ -53,67 +67,87 @@
 
           
           <div class="card-bottom">
+              <canvas id="pieChart">
 
-           
-              
+              <script>
+                  var context = document.getElementById('pieChart').getContext('2d');
+
+                  var data = {
+                      datasets: [{
+                          data: [40, 60], // Os valores representam 25% e 75%
+                          backgroundColor: ['#d2d2d2', '#0B2447'], // Cores das fatias
+                          borderColor: ['#303030'],
+                      }],
+                      labels: ['Resultou em perda total', 'Voltou ao seu funcionamento ideal'], // Rótulos das fatias
+                  };
+
+                  var options = {}; // Adicione opções aqui, se necessário
+
+                  var pieChart = new Chart(context, {
+                      type: 'pie', // Tipo de gráfico é 'pie' para gráfico de pizza
+                      data: data,
+                      options: options
+                  });
+              </script>
+              </canvas>
           </div>
         </div>
       </div>
       <div class="card2">
-        <!-- <h3>Feedbacks</h3> -->
+        <!-- <h4>Feedbacks</h3> -->
         <div class="box">
           <div class="user">
-            <h3>Usuário leOh avaliou:</h3>
+            <h4>Usuário leOh avaliou:</h4>
           </div>
           <div class="user-rating">
 
-            <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-            <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-            <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-            <img src="assents/svg/13595-removebg-preview.svg" />
-            <img src="assents/svg/13595-removebg-preview.svg" />
+            <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+            <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+            <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+            <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+            <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
 
           </div>
         </div>
         <div class="box">
           <div class="user">
-            <h3>Usuário rensnz avaliou:</h3>
+            <h4>Usuário rensnz avaliou:</h4>
             </div>
             <div class="user-rating">
 
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
   
             </div>
         </div>
 
         <div class="box">
           <div class="user">
-            <h3>Usuário PecinhaPedro avaliou:</h3>
+            <h4>Usuário PecinhaPedro avaliou:</h4>
             </div>
             <div class="user-rating">
 
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-             <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-             <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+             <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+             <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
         </div>
         </div>
         <div class="box">
           <div class="user">
-            <h3>Usuário PecinhaGiovanni avaliou:</h3>
+            <h4>Usuário PecinhaGiovanni avaliou:</h4>
             </div>
             <div class="user-rating">
 
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-             <img src="assents/svg/imagem_2023-11-25_231041864-removebg-preview.svg">
-              <img src="assents/svg/13595-removebg-preview.svg" />
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
+              <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
               </div>
         </div>
       </div>
@@ -121,12 +155,14 @@
     <dialog id="modal">
       <h2>Deseja avaliar sua expêriencia?</h2>
       <div class="avaliable">
-        <img data-id="1" onclick="selectStar(this)"  src="assents/svg/13595-removebg-preview.svg" />
-        <img data-id="2" onclick="selectStar(this)"  src="assents/svg/13595-removebg-preview.svg" />
-        <img data-id="3" onclick="selectStar(this)" src="assents/svg/13595-removebg-preview.svg" />
-        <img data-id="4" onclick="selectStar(this)" src="assents/svg/13595-removebg-preview.svg" />
-        <img data-id="5" onclick="selectStar(this)" src="assents/svg/13595-removebg-preview.svg" />
+        <img data-id="1" onclick="selectStar(this)"  src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+        <img data-id="2" onclick="selectStar(this)"  src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+        <img data-id="3" onclick="selectStar(this)" src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+        <img data-id="4" onclick="selectStar(this)" src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+        <img data-id="5" onclick="selectStar(this)" src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
       </div>
+
+      
       <button id="btnOK" onclick="closeModal()">Avaliar</button>
     </dialog>
   </body>
