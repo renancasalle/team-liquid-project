@@ -81,7 +81,7 @@ html, body, .container{
     width: 100%;
     align-items: center;
     flex-direction: column;
-    display: flexç
+    display: flex;
 }
 .block3{
     height: 50%;

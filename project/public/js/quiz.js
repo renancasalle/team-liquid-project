@@ -19,7 +19,7 @@ function checkAnswer(element){
 
     const answer =  element.getAttribute("data-answer");
     const numberQuestion = Number(element.getAttribute("data-question"))
-    const endgame = document.querySelector(".screen")
+    const endgame = document.querySelector(".endgame")
 
     // quiz inicia a partir do momento em que o usuario aperta o botao correto.
     timer = setInterval(function () {
@@ -31,7 +31,6 @@ function checkAnswer(element){
         endgame.classList.add("active")
         screen.classList.add("active")
 
-        endgame.innerHTML += `<img src="assents/png/liquid-bicampea.jpeg">`
         endgame.innerHTML += time
 
 

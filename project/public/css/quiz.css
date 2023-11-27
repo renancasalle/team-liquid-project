@@ -143,7 +143,7 @@ html, body, .container{
     height: 400px;
     width: 750px;
     display: none;
-    
+    background-image: url("../assents/png/liquid-bicampea.jpeg");
 }
 .endgame.active{
     display: flex;
