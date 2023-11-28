@@ -176,7 +176,7 @@ html, body, .container{
     justify-content: start;
     align-items: center;
 }
-#quizTimer{
+.quizTimer{
     font-size: 60px;
     font-family: 'Orbitron', sans-serif;
     color: #daa520;
