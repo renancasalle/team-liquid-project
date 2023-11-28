@@ -18,10 +18,10 @@ function selectStar(element) {
     if(star == 1){
         avaliable.innerHTML = `
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
         `
     
         
@@ -29,17 +29,17 @@ function selectStar(element) {
         avaliable.innerHTML = `
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
         `
     }else if(star == 3){
         avaliable.innerHTML = `
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
-        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg" />
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
         `
     }else if(star == 4){
         avaliable.innerHTML = `
@@ -47,7 +47,7 @@ function selectStar(element) {
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
         <img src="assents/svg/imagem_2023-11-26_173813836-removebg-preview.svg">
-        <img src="assents/svg/13595-removebg-preview.svg"
+        <img src="assents/svg/imagem_2023-11-26_174126319-removebg-preview.svg">
         `
     }else{
         avaliable.innerHTML = `

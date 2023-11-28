@@ -20,6 +20,7 @@ function checkAnswer(element){
     const answer =  element.getAttribute("data-answer");
     const numberQuestion = Number(element.getAttribute("data-question"))
     const endgame = document.querySelector(".endgame")
+    const quizTimer = document.getElementById("quizTimer")
 
     // quiz inicia a partir do momento em que o usuario aperta o botao correto.
     timer = setInterval(function () {
@@ -27,11 +28,11 @@ function checkAnswer(element){
         
     }, 1000);
 
-    if(numberQuestion == 0 && answer == questions[numberQuestion].answers){
+    if(numberQuestion == 2 && answer == questions[numberQuestion].answers){
         endgame.classList.add("active")
         screen.classList.add("active")
 
-        endgame.innerHTML += time
+        quizTimer.innerHTML += time
 
 
 

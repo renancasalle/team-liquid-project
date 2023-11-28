@@ -143,13 +143,59 @@ html, body, .container{
     height: 400px;
     width: 750px;
     display: none;
-    background-image: url("../assents/png/liquid-bicampea.jpeg");
+    background-color: #051827;
+}
+.column-1{
+    height: 100%;
+    width: 50%;
+}
+.trophie-endGame{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+}
+.trophie-endGame img{
+    height: 220px;
+    width: 240px;
+    transform: rotate(-17deg);
+}
+#imgWin img{
+    height: 130px;
+    width: 90px;
+}
+.column-2{
+    height: 100%;
+    width: 50%;
+}
+.new-timer{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+#quizTimer{
+    font-size: 60px;
+    font-family: 'Orbitron', sans-serif;
+    color: #daa520;
+}
+.all-ranking{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
 }
 .endgame.active{
     display: flex;
     height: 400px;
     width: 750px;
-    background-color: #fff;
+    
 }
 .titleQuiz{
     height: 40%;
