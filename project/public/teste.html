@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Finger Movement Drawing</title>
+</head>
+<style>
+    body {
+       background-color: #f0f0f0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       height: 100vh;
+       margin: 0;
+    }
+    canvas {
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+   </style>
+<body>
+ <canvas id="drawingCanvas" width="800" height="400"></canvas>
+</body>
+</html>
+<script>
+    const canvas = document.getElementById('drawingCanvas');
+    const ctx = canvas.getContext('2d');
+    let isDrawing = false;
+   
+    canvas.addEventListener('mousedown', (e) => {
+       isDrawing = true;
+       ctx.beginPath();
+       ctx.moveTo(e.clientX, e.clientY);
+    });
+   
+    canvas.addEventListener('mousemove', (e) => {
+       if (!isDrawing) return;
+       ctx.lineTo(e.clientX, e.clientY);
+       ctx.stroke();
+    });
+   
+    canvas.addEventListener('mouseup', () => {
+       isDrawing = false;
+    });
+   </script>

@@ -1,5 +1,4 @@
 var usuarioModel = require("../models/usuarioModel");
-var aquarioModel = require("../models/aquarioModel");
 
 function autenticar(req, res) {
     var email = req.body.emailServer;
@@ -14,11 +13,13 @@ function autenticar(req, res) {
         usuarioModel.autenticar(email, senha)
             .then(
                 function (resultadoAutenticar) {     
-                    if (resultadoAutenticar.length == 1) {
-                        res.status(403).send("Email e/ou senha inválido(s)");
+                 
+                    if (resultadoAutenticar.length == 0) {
+                        res.status(403).send("E-mail e/ou senha inválidos!");
                     } else {
-                        res.status(200).json(resultadoAutenticar)
+                        res.status(200).json(resultadoAutenticar);
                     }
+                    
                 }
             ).catch(
                 function (erro) {
@@ -30,24 +31,21 @@ function autenticar(req, res) {
 
 function cadastrar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
-    var nome = req.body.nomeServer;
     var email = req.body.emailServer;
     var senha = req.body.senhaServer;
     var nick = req.body.nickServer;
 
     // Faça as validações dos valores
-    if (nome == "") {
-        res.status(400).send("Seu nome está undefined!");
+    if (nick == "") {
+        res.status(400).send("Seu nick está inválido!");
     } else if (email == "") {
-        res.status(400).send("Seu email está undefined!");
+        res.status(400).send("Seu email está inválido!");
     } else if (senha == "") {
-        res.status(400).send("Sua senha está undefined!");
-    } else if (nick == "") {
-        res.status(400).send("Seu nick está undefined!");
+        res.status(400).send("Sua senha está inválido!");
     } else {
 
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.cadastrar(nome, email, senha, nick)
+        usuarioModel.cadastrar(email, senha, nick)
             .then(
                 function (resultado) {
                     res.json(resultado);

@@ -11,11 +11,28 @@ function realizarLogin() {
 
     if (!emailTest) {
         openModal("<b>Insira um E-mail válido.</b>")
-    } else if (password != 12345678 || password.length < 8) {
+    } else if (password.length < 8) {
         openModal("<b>Senha incorreta.</b>");
     } else {
-        openModal("<b>Login realizado com sucesso!</b>");
-        window.location.href = "home.html";
+        fetch("/usuarios/autenticar", { 
+            method:"POST",
+            headers: { 
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                emailServer: email,
+                senhaServer: password
+            })
+    }).then(result => {
+        result.json().then(result => {
+            sessionStorage.setItem("idUsuario", result[0].idUsuario)
+            window.location.href = "../home.html";
+        })
+    }).catch(error => {
+        console.log(error);
+    }) 
+        // openModal("<b>Login realizado com sucesso!</b>");
+        // window.location.href = "home.html";
     }
 }
 
