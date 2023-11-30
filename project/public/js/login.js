@@ -31,8 +31,6 @@ function realizarLogin() {
     }).catch(error => {
         console.log(error);
     }) 
-        // openModal("<b>Login realizado com sucesso!</b>");
-        // window.location.href = "home.html";
     }
 }
 

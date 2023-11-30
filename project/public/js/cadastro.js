@@ -8,10 +8,13 @@ function realizarCadastro() {
     let email = input_email.value;
     let password = input_password.value;
     let confirmPassword = input_confirmPassword.value;
+    let nick = input_nick.value
     let emailTest = re.test(email);
 
     if (!emailTest) {
         openModal("<b>Insira um E-mail válido.</b>")
+    } else if (nick.length < 3){
+        openModal("<b>Insira um Nickname válido.</b>")
     } else if (password == "" || confirmPassword == "") {
        openModal("<b>É necessário preencher todos os campos</b>");
     } else if (password != confirmPassword) {
@@ -19,8 +22,25 @@ function realizarCadastro() {
     } else if (password.length < 8 || confirmPassword.length < 8){
         openModal("<b> A senha tem que ter no minimo 8 caracteres")
     } else {
-        openModal("<b>Cadastro realizado com sucesso!</b>");
-        window.location.href = "login.html";
+        fetch("usuarios/cadastrar", {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify({
+               emailServer: email,
+               senhaServer: password,
+               nickServer: nick
+            }),
+        })
+         .then(function (resposta) {
+
+            if (resposta.ok) {
+                    window.location.href = "login.html"
+            }else{
+                openModal("Houve um erro ao tentar realizar o cadastro!")
+            }
+         })
     }
 }
 
