@@ -11,7 +11,7 @@ html, body, .container{
 }
 .container{
     /*background-color: #0b2447;*/
-    background-image: url(../assents/png/TL_Neon_Logo_Desktop.jpg);
+    background-image: url(../assets/png/TL_Neon_Logo_Desktop.jpg);
     background-size: 2000px;
     display: flex;
 }
