@@ -62,8 +62,23 @@ function cadastrar(req, res) {
             );
     }
 }
+function registrarDados(req, res){
+    var time = req.body.timeServer
+
+    usuarioModel.registrarDados(time)
+        .then(
+            function (resultado) {
+                res.status(201).send("vai corinthians")
+            }
+        ) //.catch(
+          //  function (erro) {
+          //      c
+          //  }
+        //)
+}
 
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    registrarDados
 }

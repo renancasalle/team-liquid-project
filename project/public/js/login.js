@@ -26,6 +26,7 @@ function realizarLogin() {
     }).then(result => {
         result.json().then(result => {
             sessionStorage.setItem("idUsuario", result[0].idUsuario)
+            
             window.location.href = "../home.html";
         })
     }).catch(error => {

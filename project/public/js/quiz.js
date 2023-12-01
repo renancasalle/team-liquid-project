@@ -13,6 +13,8 @@ const B = document.getElementById("buttonB")
 const C = document.getElementById("buttonC")
 const D = document.getElementById("buttonD")
 
+const idUsuario = Number(sessionStorage.getItem("idUsuario"))
+
 let second = 0;
 let minute = 0;
 let timer;
@@ -24,7 +26,6 @@ function checkAnswer(element){
     const numberQuestion = Number(element.getAttribute("data-question"))
     const endgame = document.querySelector(".endgame")
 
-    const quizTimer = document.getElementById("quizTimer")
     const minutes = document.getElementById("minutes")
     const seconds = document.getElementById("seconds")
 
@@ -39,16 +40,34 @@ function checkAnswer(element){
         second = 0
     }}, 1000);
 
-    minutes.innerHTML = formartTime(minute);
-    seconds.innerHTML = formartTime(second);
+    minutes.innerHTML = formatTime(minute);
+    seconds.innerHTML = formatTime(second);
     
     if(numberQuestion == 2 && answer == questions[numberQuestion].answers){
 
         endgame.classList.add("active")
         screen.classList.add("active")
 
-        clearInterval(timer);
+        clearTimeout(timer);
 
+        var formattedTime = `00:${formatTime(minute)}:${formatTime(second)}`;
+
+        fetch(`pontuacao/registrar/${idUsuario}`, {
+            method: "POST",
+            headers: {
+                "Content-type": "application/json"
+            },
+            body: JSON.stringify({
+               timeServer: formattedTime
+            })
+    }).then(res => {
+        console.log(res);
+    })
+
+
+console.log(formattedTime);
+
+   
     }else if (answer == questions[numberQuestion].answers){
         nextQuestion(numberQuestion + 1);
     }else{
@@ -57,7 +76,7 @@ function checkAnswer(element){
 }
 
 // função para formatar cronometro 
-function formartTime(time){
+function formatTime(time){
     return time < 10 ? `0${time}` : time
 }
 
