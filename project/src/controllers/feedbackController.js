@@ -12,7 +12,17 @@ function adicionarFeedback(req, res){
     })
 }
 
+function contarAvaliacaoMaxima(req, res){
+    feedbackModel.contarAvaliacaoMaxima()
+    .then(function(result){
+        res.status(200).json(result)
+    }).catch(function(error){
+        console.log(error);
+    })
+}
+
 module.exports = {
-    adicionarFeedback
+    adicionarFeedback,
+    contarAvaliacaoMaxima
 }
 

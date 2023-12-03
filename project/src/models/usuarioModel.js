@@ -18,7 +18,16 @@ function cadastrar(email, senha, nick) {
     console.log("Executando a instrução SQL: \n" + instrucao);
     return database.executar(instrucao);
 }
+
+function puxarDados(){
+    var instrucao = `
+    select count(nick) as qtdNick from usuario;
+    `
+    return database.executar(instrucao);
+}
+
 module.exports = {
     autenticar,
-    cadastrar
+    cadastrar,
+    puxarDados
 };

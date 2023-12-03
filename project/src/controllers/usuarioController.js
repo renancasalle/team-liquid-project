@@ -77,8 +77,27 @@ function registrarDados(req, res){
         //)
 }
 
+//function puxarDados(){
+//    usuarioModel.puxarDados()
+//        .then(
+//            function (resultado) {
+//                
+//            }
+//        )
+//}
+
+function puxarDados(req, res){
+    usuarioModel.puxarDados()
+    .then(function(result){
+        res.status(200).json(result)
+    }).catch(function(error){
+        console.log(error);
+    })
+}
+
 module.exports = {
     autenticar,
     cadastrar,
-    registrarDados
+    registrarDados,
+    puxarDados
 }

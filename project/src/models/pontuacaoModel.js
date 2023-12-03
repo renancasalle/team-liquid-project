@@ -13,7 +13,15 @@ function exibirRanking(){
     return database.executar(instrucao);
 }
 
+function contarTempo(){
+    var instrucao = `
+    select count(tempo) as qtdTempo from pontuacao;
+    `
+    return database.executar(instrucao);
+}
+
 module.exports = {
     registrar,
-    exibirRanking
+    exibirRanking,
+    contarTempo
 };

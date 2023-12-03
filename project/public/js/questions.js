@@ -15,8 +15,8 @@
         alt3: "C) 1999",
         alt4: "D) 2000",
         answers: "D"
-    }
-}, 
+    },
+ 
 {
     question: "Quem é o atual IGL (In-game Leader) do time de Rainbow Six?",
     answer: [
@@ -89,5 +89,5 @@
         {text: "D) Euro Gunz", correct: false},
     ]
 }
-]
+
 

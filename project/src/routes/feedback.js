@@ -8,4 +8,8 @@ router.post("/adicionar/:idUsuario", function (req, res) {
     feedbackController.adicionarFeedback(req, res);
 });
 
+router.get("/avaliacao/", function(req, res){
+    feedbackController.contarAvaliacaoMaxima(req, res)
+});
+
 module.exports = router;

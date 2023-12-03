@@ -75,3 +75,27 @@ function selectStar(element) {
 
 window.addEventListener("load", openModal);
 
+fetch(`/usuarios/puxar`)
+    .then(function (resposta) {
+
+    resposta.json().then(function (resposta){
+        usuariosCadastrados.innerHTML = resposta[0].qtdNick
+    })
+ });
+
+ fetch(`/pontuacao/contar`)
+    .then(function (resposta) {
+
+    resposta.json().then(function (resposta){
+        quizIniciado.innerHTML = resposta[0].qtdTempo
+    })
+
+ })
+
+ fetch(`/feedback/avaliacao`)
+    .then(function (resposta) {
+
+    resposta.json().then(function (resposta){
+        avaliacoesMaximas.innerHTML = resposta[0].qtdFeedback
+    })
+ });

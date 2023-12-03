@@ -12,4 +12,8 @@ router.get("/exibir", function (req, res) {
     pontuacaoController.exibirRanking(req, res);
 })
 
+router.get("/contar", function (req, res) {
+    pontuacaoController.contarTempo(req, res)
+});
+
 module.exports = router;
