@@ -63,10 +63,18 @@ function checkAnswer(element){
     }).then(res => {
         console.log(res);
     })
-
-
 console.log(formattedTime);
 
+fetch(`/pontuacao/exibir`)
+    .then(res => {
+        res.json().then(res => {
+            result.innerHTML = "<h2>Ranking</h2?<br><br>"
+            for(var i = 0; i < 5; i++){
+                result.innerHTML += `<div>${i+1}º ${res[i].nickname}: ${res[i].tempo}</div>`
+            }
+        })
+    });
+ 
    
     }else if (answer == questions[numberQuestion].answers){
         nextQuestion(numberQuestion + 1);

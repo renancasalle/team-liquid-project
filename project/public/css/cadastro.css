@@ -37,12 +37,18 @@ body{
     height: 180px;
     cursor: pointer;
 }
+
 .input{
     height: 70%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 4px #fff;
 }
 
 .container-cadastro input{

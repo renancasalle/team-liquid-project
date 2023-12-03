@@ -187,6 +187,7 @@ html, body, .container{
     display: flex;
     align-items: center;
     justify-content: start;
+    flex-direction: column;
     color: white;
     font-size: 18px;
     letter-spacing: 2px;

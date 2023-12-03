@@ -8,4 +8,8 @@ router.post("/registrar/:fkUsuario", function (req, res) {
     pontuacaoController.registrarDados(req, res);
 })
 
+router.get("/exibir", function (req, res) {
+    pontuacaoController.exibirRanking(req, res);
+})
+
 module.exports = router;

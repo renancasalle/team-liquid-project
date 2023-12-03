@@ -15,6 +15,15 @@ function registrarDados(req, res){
           //  }
         //)
 }
+function exibirRanking(req, res){
+    pontuacaoModel.exibirRanking()
+    .then(function(result){
+        res.status(200).json(result)
+    }).catch(function(error){
+        console.log(error);
+    })
+}
 module.exports = {
-    registrarDados
+    registrarDados,
+    exibirRanking
 }

@@ -5,6 +5,15 @@ function registrar(time, fkUsuario) {
     INSERT INTO pontuacao (tempo, fkUsuario) VALUES ('${time}', '${fkUsuario}')`
     return database.executar(instrucao);
 }
+function exibirRanking(){
+    var instrucao = `
+    select usuario.nick as nickname, pontuacao.tempo as tempo from pontuacao 
+    join usuario on fkUsuario = idUsuario order by tempo;
+    `
+    return database.executar(instrucao);
+}
+
 module.exports = {
-    registrar
+    registrar,
+    exibirRanking
 };
