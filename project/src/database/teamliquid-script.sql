@@ -9,13 +9,12 @@ senha varchar(45));
 
 create table pontuacao(
 idPontuacao int primary key auto_increment,
-pontos int,
+tempo time,
 fkUsuario int,
 foreign key (fkUsuario) references usuario(idUsuario));
 
 create table feedback(
 idFeedback int primary key auto_increment,
-feedback varchar(200),
+feedback int,
 fkUsuario int,
 foreign key (fkUsuario) references usuario(idUsuario));
-
