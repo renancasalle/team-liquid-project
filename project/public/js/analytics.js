@@ -99,3 +99,15 @@ fetch(`/usuarios/puxar`)
         avaliacoesMaximas.innerHTML = resposta[0].qtdFeedback
     })
  });
+
+ fetch(`/feedback/verificar/${idUsuario}`)
+    .then(function (resposta) {
+    resposta.json().then(function (resposta){
+        console.log(resposta)
+        if(resposta.length > 0){
+            modal.classList.remove("active"); 
+        }else{
+            modal.classList.add("active"); 
+        }
+    })
+ });

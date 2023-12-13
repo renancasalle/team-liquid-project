@@ -21,8 +21,19 @@ function contarAvaliacaoMaxima(req, res){
     })
 }
 
+function verificarAvaliacao(req, res){
+    var idUsuario = req.params.idUsuario
+    feedbackModel.verificarAvaliacao(idUsuario)
+    .then(function(result){
+        res.status(200).json(result)
+    }).catch(function(error){
+        console.log(error);
+    })
+}
+
 module.exports = {
     adicionarFeedback,
-    contarAvaliacaoMaxima
+    contarAvaliacaoMaxima,
+    verificarAvaliacao
 }
 

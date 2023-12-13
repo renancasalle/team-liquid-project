@@ -1,5 +1,6 @@
 var database = require("../database/config")
 
+
 function adicionarFeedback(star, fkUsuario){
 
     var instrucao = `
@@ -16,7 +17,16 @@ function contarAvaliacaoMaxima(){
     return database.executar(instrucao);
 }
 
+function verificarAvaliacao(idUsuario){
+    
+    var instrucao = `
+    select feedback.fkUsuario from feedback where fkUsuario = ${idUsuario} limit 1;	
+    `
+    return database.executar(instrucao);
+}
+
 module.exports = {
     adicionarFeedback,
-    contarAvaliacaoMaxima
+    contarAvaliacaoMaxima,
+    verificarAvaliacao
 };

@@ -15,6 +15,8 @@ const D = document.getElementById("buttonD")
 
 const idUsuario = Number(sessionStorage.getItem("idUsuario"))
 
+
+
 let second = 0;
 let minute = 0;
 let timer;
@@ -43,7 +45,7 @@ function checkAnswer(element){
     minutes.innerHTML = formatTime(minute);
     seconds.innerHTML = formatTime(second);
     
-    if(numberQuestion == 2 && answer == questions[numberQuestion].answers){
+    if(numberQuestion == 6  && answer == questions[numberQuestion].answers){
 
         endgame.classList.add("active")
         screen.classList.add("active")

@@ -12,4 +12,8 @@ router.get("/avaliacao/", function(req, res){
     feedbackController.contarAvaliacaoMaxima(req, res)
 });
 
+router.get("/verificar/:idUsuario", function(req, res){
+    feedbackController.verificarAvaliacao(req, res)
+});
+
 module.exports = router;
